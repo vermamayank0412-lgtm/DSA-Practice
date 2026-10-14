@@ -4,7 +4,7 @@ class Solution {
 
     public int countGoodNumbers(long n) {
         long evenPositions = (n + 1) / 2;
-        long oddPositions = n / 2;
+        long oddPositions = n // 2;
 
         return (int) ((pow(5, evenPositions) *
                        pow(4, oddPositions)) % MOD);
